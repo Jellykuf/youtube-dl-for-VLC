@@ -1,3 +1,4 @@
+--http://regex.info/blog/lua/json
 local JSON = require("JSON")
 
 function probe()
