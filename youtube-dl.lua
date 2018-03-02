@@ -1,8 +1,8 @@
 local JSON = require("JSON")
 
 function probe()
-    --Trying to catch any json input from playing.
-    if string.match( vlc.path, "ttl=" ) or string.match( vlc.path, "hash=" ) or string.match( vlc.path, ".mp4" )
+    --Trying to catch any json input or youtube video from playing.
+    if string.match( vlc.path, "ttl=" ) or string.match( vlc.path, "hash=" ) or string.match( vlc.path, ".mp4" ) or string.match( vlc.path, "youtube.com" )  or string.match( vlc.path, "youtu.be" )
     then
         return false
     end
