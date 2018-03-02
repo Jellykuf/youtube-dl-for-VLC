@@ -5,6 +5,7 @@ function probe()
 	if string.match( vlc.path, "ttl=" ) or 
 	string.match( vlc.path, "hash=" ) or 
 	string.match( vlc.path, ".mp4" ) or
+	string.match( vlc.path, ".m3u8" ) or
 	string.match( vlc.path, "youtube.com" ) or
 	string.match( vlc.path, "youtu.be" ) or
 	string.match( vlc.path, "twitch.tv" ) or
